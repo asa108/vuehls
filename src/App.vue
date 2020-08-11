@@ -28,7 +28,7 @@ export default {
         // hls.loadSource(
         //   "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
         // );
-        hls.loadSource("../public/video/playlist.m3u8");
+        hls.loadSource("./video/playlist.m3u8");
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
           console.log(event); //hlsManifestParsed
