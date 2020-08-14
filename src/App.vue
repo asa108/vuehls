@@ -28,7 +28,10 @@ export default {
       if (Hls.isSupported()) {
         this.hls = new Hls();
         // hls.currentLevel = n;
-        this.hls.loadSource("./video/playlist.m3u8");
+        // this.hls.loadSource("./video/playlist.m3u8");
+        this.hls.loadSource(
+          "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
+        );
         this.hls.attachMedia(video);
         this.hls.on(Hls.Events.MANIFEST_PARSED, function(event, data) {
           console.log(data.levels);
