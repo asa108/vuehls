@@ -2,10 +2,10 @@
   <div>
     <h1>Vuejs Hlsjs</h1>
 
-    <video ref="video" id="video" controls webkit-playsinline muted autoplay height="1500"></video>
+    <video ref="video" id="video" controls webkit-playsinline muted autoplay></video>
     <button @click="PlayVide()">動画を再生する</button>
-    <button @click="changeResolution(3)">1080pを再生</button>
-    <button @click="changeResolution(0)">360pを再生</button>
+    <button @click="changeResolution(3)" class="btn1">1080pを再生</button>
+    <button @click="changeResolution(0)" class="btn2">360pを再生</button>
 
     <!-- <img src="../public/logo.png" alt="image" class="img" /> -->
     <!-- <img src="./assets/Icon_3d.png" alt="" /> -->
@@ -62,4 +62,9 @@ export default {
 #video {
   height: 300px;
 }
+
+/* .btn1{
+  width: 100px;
+  height: 100px;
+} */
 </style>
